@@ -1,0 +1,19 @@
+
+UPDATE `EC` A INNER JOIN UE B ON A.code_ue = B.code_ue SET A.`code_ment` = B.code_ment ;
+
+ALTER TABLE `Note` ADD `code_user` VARCHAR(14) NULL DEFAULT NULL AFTER `date_saisie`;
+ALTER TABLE `Note` CHANGE `code_fil` `code_ment` VARCHAR(14) CHARACTER SET latin1 COLLATE latin1_swedish_ci 
+NOT NULL, CHANGE `code_niv` `code_parc` VARCHAR(14) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT 
+NULL, CHANGE `code_categCours` `code_ue` VARCHAR(14) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL, 
+CHANGE `code_mat` `code_ec` VARCHAR(14) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+
+
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+

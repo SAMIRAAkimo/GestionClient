@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 juil. 2021, 05:08:49
+    Author     : rachid
+*/
+
+.select2-container {
+    z-index: 999999999  !important;
+}
+
+.multiselect-container{
+    z-index: 999999999999 !important;
+}
+
+.admis {
+    background-color: white !important;
+}
+.redouble {
+    background-color:  #A30029 !important;
+    color: white;
+}
+.sous_reserve {
+    background-color:  #ED9C28 !important;
+}
+.exclu {
+    background-color:  #2E5A66 !important;
+    color: white;
+}
+
+
+/*////page format////*/
+
+body {
+    background: rgb(204, 204, 204);
+}
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+   
+}
+
+.fond{
+    /*background-image:  url("../img/Carte_1.jpg");*/
+    background-color: #003e80;
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+page[size="A3"] {
+    width: 29.7cm;
+    height: 42cm;
+}
+
+page[size="A3"][layout="landscape"] {
+    width: 42cm;
+    height: 29.7cm;
+}
+
+page[size="A5"] {
+    width: 14.8cm;
+    height: 21cm;
+}
+
+page[size="A5"][layout="landscape"] {
+    width: 21cm;
+    height: 14.8cm;
+}
+@media print {
+    body,
+    page {
+        margin: 0;
+        box-shadow: 0;
+        size: 8.5in 5.5in;
+        size: landscape;
+    }
+}
